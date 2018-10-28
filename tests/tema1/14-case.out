@@ -1,0 +1,46 @@
+class : CLASS
+A : ID
+{ : AS
+f : ID
+( : PS
+x : ID
+: : DP
+Object : ID
+) : PD
+: : DP
+String : ID
+{ : AS
+case : ID
+x : ID
+of : ID
+s : ID
+: : DP
+String : ID
+= : INEGALITATI
+> : INEGALITATI
+"String" : STRING
+; : PV
+i : ID
+: : DP
+Int : ID
+= : INEGALITATI
+> : INEGALITATI
+"Int" : STRING
+; : PV
+o : ID
+: : DP
+Object : ID
+= : INEGALITATI
+> : INEGALITATI
+"Oops" : STRING
+; : PV
+esac : ID
+} : AD
+; : PV
+} : AD
+; : PV
+<EOF> : EOF
+"14-case.cl", line 3:13, Syntax error: no viable alternative at input 'f(x:Object):String{casex'
+"14-case.cl", line 5:23, Syntax error: mismatched input '=' expecting {';', '<-'}
+(program (stat (decclass class A (body { f ( x : Object ) : String { case x of s : String = > "String"))) ; (stat (decvar i : Int)) = > "Int" ; o : Object = > "Oops" ; esac } ; } ;)
+Compilation halted

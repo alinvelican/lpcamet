@@ -1,0 +1,30 @@
+class : CLASS
+A : ID
+{ : AS
+f : ID
+( : PS
+x : ID
+: : DP
+Int : ID
+) : PD
+: : DP
+String : ID
+{ : AS
+{ : AS
+x : ID
+<- : ATRIBUIRE
+x : ID
++ : ARITMETIC
+1 : INT
+; : PV
+"Done!" : STRING
+; : PV
+} : AD
+} : AD
+; : PV
+} : AD
+; : PV
+<EOF> : EOF
+"15-block.cl", line 3:8, Syntax error: no viable alternative at input 'f(x:Int):String{{'
+(program (stat (decclass class A (body { f ( x : Int ) : String { { x <- x + 1))) ;)
+Compilation halted

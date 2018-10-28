@@ -1,0 +1,25 @@
+class : CLASS
+A : ID
+{ : AS
+* : ARITMETIC
+) : PD
+x : ID
+: : DP
+Int : ID
+; : PV
+( : PS
+* : ARITMETIC
+some : ID
+( : PS
+* : ARITMETIC
+comment : ID
+* : ARITMETIC
+) : PD
+} : AD
+; : PV
+<EOF> : EOF
+"19-error-comment.cl", line 2:4, Syntax error: mismatched input '*' expecting {'class', FIRSTEVAL, 'new', 'if', BOOL, 'while', 'let', ID, INT, '}', '('}
+"19-error-comment.cl", line 6:5, Syntax error: extraneous input '*' expecting {FIRSTEVAL, 'new', BOOL, ID, INT, '('}
+"19-error-comment.cl", line 6:12, Syntax error: mismatched input '(' expecting {')', ARITMETIC, INEGALITATI}
+(program (stat (decclass class A (body { * ) x : Int))) ; (stat (expresie ( (expresie * some) ( * comment * ) })) ;)
+Compilation halted

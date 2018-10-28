@@ -1,0 +1,14 @@
+class : CLASS
+A : ID
+{ : AS
+} : AD
+; : PV
+class : CLASS
+B : ID
+inherits : INHERITS
+A : ID
+{ : AS
+} : AD
+; : PV
+<EOF> : EOF
+(program (stat (decclass class A (body { }))) ; (stat (decclass class B inherits A (body { }))) ;)
