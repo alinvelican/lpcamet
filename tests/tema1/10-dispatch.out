@@ -1,80 +1,51 @@
-class : CLASS
-A : ID
-{ : AS
-f : ID
-( : PS
-x : ID
-: : DP
-Int : ID
-) : PD
-: : DP
-Bool : ID
-{ : AS
-f : ID
-( : PS
-x : ID
-+ : ARITMETIC
-1 : INT
-) : PD
-} : AD
-; : PV
-g : ID
-( : PS
-x : ID
-: : DP
-Int : ID
-, : VIRGULA
-y : ID
-: : DP
-Int : ID
-) : PD
-: : DP
-Bool : ID
-{ : AS
-self : ID
-. : PUNCT
-g : ID
-( : PS
-x : ID
-+ : ARITMETIC
-1 : INT
-, : VIRGULA
-y : ID
-+ : ARITMETIC
-1 : INT
-) : PD
-} : AD
-; : PV
-h : ID
-( : PS
-x : ID
-: : DP
-Int : ID
-) : PD
-: : DP
-A : ID
-{ : AS
-new : NEW
-A : ID
-@ : AT
-A : ID
-. : PUNCT
-h : ID
-( : PS
-x : ID
-+ : ARITMETIC
-1 : INT
-) : PD
-. : PUNCT
-h : ID
-( : PS
-x : ID
-+ : ARITMETIC
-2 : INT
-) : PD
-} : AD
-; : PV
-} : AD
-; : PV
-<EOF> : EOF
-(program (stat (decclass class A (body { (stat (decfunctie (header f ( (decvars (decvar x : Int)) ) : Bool) (body { (stat (funccall f ( (expresi (expresie (expresie x) + (expresie 1))) ))) }))) ; (stat (decfunctie (header g ( (decvars (decvar x : Int) , (decvar y : Int)) ) : Bool) (body { (stat (objectfunccall self . (funccall g ( (expresi (expresie (expresie x) + (expresie 1)) , (expresie (expresie y) + (expresie 1))) )))) }))) ; (stat (decfunctie (header h ( (decvars (decvar x : Int)) ) : A) (body { (stat (expresie (dispatch (newobject new A) @ A . (funccall h ( (expresi (expresie (expresie x) + (expresie 1))) )) . (funccall h ( (expresi (expresie (expresie x) + (expresie 2))) ))))) }))) ; }))) ;)
+program
+  class
+    A
+    method
+      f
+      formal
+        x
+        Int
+      Bool
+      implicit dispatch
+        f
+        +
+          x
+          1
+    method
+      g
+      formal
+        x
+        Int
+      formal
+        y
+        Int
+      Bool
+      .
+        self
+        g
+        +
+          x
+          1
+        +
+          y
+          1
+    method
+      h
+      formal
+        x
+        Int
+      A
+      .
+        .
+          new
+            A
+          A
+          h
+          +
+            x
+            1
+        h
+        +
+          x
+          2

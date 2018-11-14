@@ -1,31 +1,19 @@
-class : CLASS
-A : ID
-{ : AS
-n : ID
-: : DP
-Int : ID
-<- : ATRIBUIRE
-0 : INT
-; : PV
-s : ID
-: : DP
-String : ID
-<- : ATRIBUIRE
-"abc" : STRING
-; : PV
-b : ID
-: : DP
-Bool : ID
-<- : ATRIBUIRE
-false : BOOL
-; : PV
-c : ID
-: : DP
-Bool : ID
-<- : ATRIBUIRE
-b : ID
-; : PV
-} : AD
-; : PV
-<EOF> : EOF
-(program (stat (decclass class A (body { (stat (decvar n : Int <- (expresie 0))) ; (stat (decvar s : String <- "abc")) ; (stat (decvar b : Bool <- (expresie false))) ; (stat (decvar c : Bool <- (expresie b))) ; }))) ;)
+program
+  class
+    A
+    attribute
+      n
+      Int
+      0
+    attribute
+      s
+      String
+      abc
+    attribute
+      b
+      Bool
+      false
+    attribute
+      c
+      Bool
+      b

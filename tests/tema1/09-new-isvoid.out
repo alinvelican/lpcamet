@@ -1,19 +1,10 @@
-class : CLASS
-A : ID
-{ : AS
-f : ID
-( : PS
-) : PD
-: : DP
-Bool : ID
-{ : AS
-not : FIRSTEVAL
-isvoid : FIRSTEVAL
-new : NEW
-A : ID
-} : AD
-; : PV
-} : AD
-; : PV
-<EOF> : EOF
-(program (stat (decclass class A (body { (stat (decfunctie (header f ( ) : Bool) (body { (stat (expresie not (expresie isvoid (expresie (newobject new A))))) }))) ; }))) ;)
+program
+  class
+    A
+    method
+      f
+      Bool
+      not
+        isvoid
+          new
+            A

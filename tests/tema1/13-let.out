@@ -1,36 +1,23 @@
-class : CLASS
-A : ID
-{ : AS
-f : ID
-( : PS
-x : ID
-: : DP
-Int : ID
-) : PD
-: : DP
-Int : ID
-{ : AS
-let : LET
-x : ID
-: : DP
-Int : ID
-<- : ATRIBUIRE
-x : ID
-+ : ARITMETIC
-1 : INT
-, : VIRGULA
-y : ID
-: : DP
-Int : ID
-<- : ATRIBUIRE
-x : ID
-+ : ARITMETIC
-1 : INT
-in : IN
-x : ID
-} : AD
-; : PV
-} : AD
-; : PV
-<EOF> : EOF
-(program (stat (decclass class A (body { (stat (decfunctie (header f ( (decvars (decvar x : Int)) ) : Int) (body { (stat (letstat let (decvars (decvar x : Int <- (expresie (expresie x) + (expresie 1))) , (decvar y : Int <- (expresie (expresie x) + (expresie 1)))) in (expresie x))) }))) ; }))) ;)
+program
+  class
+    A
+    method
+      f
+      formal
+        x
+        Int
+      Int
+      let
+        local
+          x
+          Int
+          +
+            x
+            1
+        local
+          y
+          Int
+          +
+            x
+            1
+        x

@@ -124,7 +124,7 @@ program
             .
               implicit dispatch
                 out_string
-                Calcul?m factorial pentru: 
+                Calculăm factorial pentru: 
               in_int
           block
             .

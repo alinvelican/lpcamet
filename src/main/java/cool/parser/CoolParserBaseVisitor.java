@@ -1,6 +1,5 @@
-// Generated from C:/Users/alin/IdeaProjects/tema1.2/src/cool/parser\CoolParser.g4 by ANTLR 4.7
+// Generated from C:/Users/alin/IdeaProjects/lpcamet/src/main/java/cool/parser\CoolParser.g4 by ANTLR 4.7
 package cool.parser;
-
 import org.antlr.v4.runtime.tree.AbstractParseTreeVisitor;
 
 /**
@@ -9,7 +8,7 @@ import org.antlr.v4.runtime.tree.AbstractParseTreeVisitor;
  * of the available methods.
  *
  * @param <T> The return type of the visit operation. Use {@link Void} for
- *            operations with no return type.
+ * operations with no return type.
  */
 public class CoolParserBaseVisitor<T> extends AbstractParseTreeVisitor<T> implements CoolParserVisitor<T> {
     /**
@@ -30,7 +29,7 @@ public class CoolParserBaseVisitor<T> extends AbstractParseTreeVisitor<T> implem
      * {@link #visitChildren} on {@code ctx}.</p>
      */
     @Override
-    public T visitStat(CoolParser.StatContext ctx) {
+    public T visitClassxx(CoolParser.ClassxxContext ctx) {
         return visitChildren(ctx);
     }
 
@@ -41,7 +40,7 @@ public class CoolParserBaseVisitor<T> extends AbstractParseTreeVisitor<T> implem
      * {@link #visitChildren} on {@code ctx}.</p>
      */
     @Override
-    public T visitDecclass(CoolParser.DecclassContext ctx) {
+    public T visitFunctie(CoolParser.FunctieContext ctx) {
         return visitChildren(ctx);
     }
 
@@ -52,7 +51,7 @@ public class CoolParserBaseVisitor<T> extends AbstractParseTreeVisitor<T> implem
      * {@link #visitChildren} on {@code ctx}.</p>
      */
     @Override
-    public T visitDecvar(CoolParser.DecvarContext ctx) {
+    public T visitAtribut(CoolParser.AtributContext ctx) {
         return visitChildren(ctx);
     }
 
@@ -63,7 +62,7 @@ public class CoolParserBaseVisitor<T> extends AbstractParseTreeVisitor<T> implem
      * {@link #visitChildren} on {@code ctx}.</p>
      */
     @Override
-    public T visitDecfunctie(CoolParser.DecfunctieContext ctx) {
+    public T visitFormalxx(CoolParser.FormalxxContext ctx) {
         return visitChildren(ctx);
     }
 
@@ -74,7 +73,40 @@ public class CoolParserBaseVisitor<T> extends AbstractParseTreeVisitor<T> implem
      * {@link #visitChildren} on {@code ctx}.</p>
      */
     @Override
-    public T visitAsigvar(CoolParser.AsigvarContext ctx) {
+    public T visitNew(CoolParser.NewContext ctx) {
+        return visitChildren(ctx);
+    }
+
+    /**
+     * {@inheritDoc}
+     *
+     * <p>The default implementation returns the result of calling
+     * {@link #visitChildren} on {@code ctx}.</p>
+     */
+    @Override
+    public T visitMinus(CoolParser.MinusContext ctx) {
+        return visitChildren(ctx);
+    }
+
+    /**
+     * {@inheritDoc}
+     *
+     * <p>The default implementation returns the result of calling
+     * {@link #visitChildren} on {@code ctx}.</p>
+     */
+    @Override
+    public T visitString(CoolParser.StringContext ctx) {
+        return visitChildren(ctx);
+    }
+
+    /**
+     * {@inheritDoc}
+     *
+     * <p>The default implementation returns the result of calling
+     * {@link #visitChildren} on {@code ctx}.</p>
+     */
+    @Override
+    public T visitBool(CoolParser.BoolContext ctx) {
         return visitChildren(ctx);
     }
 
@@ -96,7 +128,7 @@ public class CoolParserBaseVisitor<T> extends AbstractParseTreeVisitor<T> implem
      * {@link #visitChildren} on {@code ctx}.</p>
      */
     @Override
-    public T visitObjectfunccall(CoolParser.ObjectfunccallContext ctx) {
+    public T visitIsvoid(CoolParser.IsvoidContext ctx) {
         return visitChildren(ctx);
     }
 
@@ -107,51 +139,7 @@ public class CoolParserBaseVisitor<T> extends AbstractParseTreeVisitor<T> implem
      * {@link #visitChildren} on {@code ctx}.</p>
      */
     @Override
-    public T visitIfthenelse(CoolParser.IfthenelseContext ctx) {
-        return visitChildren(ctx);
-    }
-
-    /**
-     * {@inheritDoc}
-     *
-     * <p>The default implementation returns the result of calling
-     * {@link #visitChildren} on {@code ctx}.</p>
-     */
-    @Override
-    public T visitWhileloop(CoolParser.WhileloopContext ctx) {
-        return visitChildren(ctx);
-    }
-
-    /**
-     * {@inheritDoc}
-     *
-     * <p>The default implementation returns the result of calling
-     * {@link #visitChildren} on {@code ctx}.</p>
-     */
-    @Override
-    public T visitLetstat(CoolParser.LetstatContext ctx) {
-        return visitChildren(ctx);
-    }
-
-    /**
-     * {@inheritDoc}
-     *
-     * <p>The default implementation returns the result of calling
-     * {@link #visitChildren} on {@code ctx}.</p>
-     */
-    @Override
-    public T visitExpresie(CoolParser.ExpresieContext ctx) {
-        return visitChildren(ctx);
-    }
-
-    /**
-     * {@inheritDoc}
-     *
-     * <p>The default implementation returns the result of calling
-     * {@link #visitChildren} on {@code ctx}.</p>
-     */
-    @Override
-    public T visitHeader(CoolParser.HeaderContext ctx) {
+    public T visitInm(CoolParser.InmContext ctx) {
         return visitChildren(ctx);
     }
 
@@ -173,7 +161,7 @@ public class CoolParserBaseVisitor<T> extends AbstractParseTreeVisitor<T> implem
      * {@link #visitChildren} on {@code ctx}.</p>
      */
     @Override
-    public T visitExpresi(CoolParser.ExpresiContext ctx) {
+    public T visitImp(CoolParser.ImpContext ctx) {
         return visitChildren(ctx);
     }
 
@@ -184,7 +172,7 @@ public class CoolParserBaseVisitor<T> extends AbstractParseTreeVisitor<T> implem
      * {@link #visitChildren} on {@code ctx}.</p>
      */
     @Override
-    public T visitDecvars(CoolParser.DecvarsContext ctx) {
+    public T visitPlus(CoolParser.PlusContext ctx) {
         return visitChildren(ctx);
     }
 
@@ -195,7 +183,7 @@ public class CoolParserBaseVisitor<T> extends AbstractParseTreeVisitor<T> implem
      * {@link #visitChildren} on {@code ctx}.</p>
      */
     @Override
-    public T visitNewobject(CoolParser.NewobjectContext ctx) {
+    public T visitWhileloop(CoolParser.WhileloopContext ctx) {
         return visitChildren(ctx);
     }
 
@@ -206,7 +194,139 @@ public class CoolParserBaseVisitor<T> extends AbstractParseTreeVisitor<T> implem
      * {@link #visitChildren} on {@code ctx}.</p>
      */
     @Override
-    public T visitDispatch(CoolParser.DispatchContext ctx) {
+    public T visitNot(CoolParser.NotContext ctx) {
+        return visitChildren(ctx);
+    }
+
+    /**
+     * {@inheritDoc}
+     *
+     * <p>The default implementation returns the result of calling
+     * {@link #visitChildren} on {@code ctx}.</p>
+     */
+    @Override
+    public T visitIntt(CoolParser.InttContext ctx) {
+        return visitChildren(ctx);
+    }
+
+    /**
+     * {@inheritDoc}
+     *
+     * <p>The default implementation returns the result of calling
+     * {@link #visitChildren} on {@code ctx}.</p>
+     */
+    @Override
+    public T visitCasee(CoolParser.CaseeContext ctx) {
+        return visitChildren(ctx);
+    }
+
+    /**
+     * {@inheritDoc}
+     *
+     * <p>The default implementation returns the result of calling
+     * {@link #visitChildren} on {@code ctx}.</p>
+     */
+    @Override
+    public T visitTil(CoolParser.TilContext ctx) {
+        return visitChildren(ctx);
+    }
+
+    /**
+     * {@inheritDoc}
+     *
+     * <p>The default implementation returns the result of calling
+     * {@link #visitChildren} on {@code ctx}.</p>
+     */
+    @Override
+    public T visitParan(CoolParser.ParanContext ctx) {
+        return visitChildren(ctx);
+    }
+
+    /**
+     * {@inheritDoc}
+     *
+     * <p>The default implementation returns the result of calling
+     * {@link #visitChildren} on {@code ctx}.</p>
+     */
+    @Override
+    public T visitIneg(CoolParser.InegContext ctx) {
+        return visitChildren(ctx);
+    }
+
+    /**
+     * {@inheritDoc}
+     *
+     * <p>The default implementation returns the result of calling
+     * {@link #visitChildren} on {@code ctx}.</p>
+     */
+    @Override
+    public T visitIfthenelse(CoolParser.IfthenelseContext ctx) {
+        return visitChildren(ctx);
+    }
+
+    /**
+     * {@inheritDoc}
+     *
+     * <p>The default implementation returns the result of calling
+     * {@link #visitChildren} on {@code ctx}.</p>
+     */
+    @Override
+    public T visitLet(CoolParser.LetContext ctx) {
+        return visitChildren(ctx);
+    }
+
+    /**
+     * {@inheritDoc}
+     *
+     * <p>The default implementation returns the result of calling
+     * {@link #visitChildren} on {@code ctx}.</p>
+     */
+    @Override
+    public T visitAtribuire(CoolParser.AtribuireContext ctx) {
+        return visitChildren(ctx);
+    }
+
+    /**
+     * {@inheritDoc}
+     *
+     * <p>The default implementation returns the result of calling
+     * {@link #visitChildren} on {@code ctx}.</p>
+     */
+    @Override
+    public T visitId(CoolParser.IdContext ctx) {
+        return visitChildren(ctx);
+    }
+
+    /**
+     * {@inheritDoc}
+     *
+     * <p>The default implementation returns the result of calling
+     * {@link #visitChildren} on {@code ctx}.</p>
+     */
+    @Override
+    public T visitObjfunccall(CoolParser.ObjfunccallContext ctx) {
+        return visitChildren(ctx);
+    }
+
+    /**
+     * {@inheritDoc}
+     *
+     * <p>The default implementation returns the result of calling
+     * {@link #visitChildren} on {@code ctx}.</p>
+     */
+    @Override
+    public T visitLetbody(CoolParser.LetbodyContext ctx) {
+        return visitChildren(ctx);
+    }
+
+    /**
+     * {@inheritDoc}
+     *
+     * <p>The default implementation returns the result of calling
+     * {@link #visitChildren} on {@code ctx}.</p>
+     */
+    @Override
+    public T visitCasebody(CoolParser.CasebodyContext ctx) {
         return visitChildren(ctx);
     }
 }

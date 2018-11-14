@@ -1,29 +1,17 @@
-class : CLASS
-A : ID
-{ : AS
-f : ID
-( : PS
-x : ID
-: : DP
-Int : ID
-) : PD
-: : DP
-Int : ID
-{ : AS
-if : IF
-x : ID
-<= : INEGALITATI
-5 : INT
-then : THEN
-x : ID
-else : ELSE
-x : ID
-+ : ARITMETIC
-1 : INT
-fi : FI
-} : AD
-; : PV
-} : AD
-; : PV
-<EOF> : EOF
-(program (stat (decclass class A (body { (stat (decfunctie (header f ( (decvars (decvar x : Int)) ) : Int) (body { (stat (ifthenelse if (expresie (expresie x) <= (expresie 5)) then (stat (expresie x)) else (stat (expresie (expresie x) + (expresie 1))) fi)) }))) ; }))) ;)
+program
+  class
+    A
+    method
+      f
+      formal
+        x
+        Int
+      Int
+      if
+        <=
+          x
+          5
+        x
+        +
+          x
+          1

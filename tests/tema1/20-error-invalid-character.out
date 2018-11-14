@@ -1,12 +1,2 @@
-line 2:13 token recognition error at: '#'
-class : CLASS
-A : ID
-{ : AS
-x : ID
-: : DP
-Int : ID
-; : PV
-} : AD
-; : PV
-<EOF> : EOF
-(program (stat (decclass class A (body { (stat (decvar x : Int)) ; }))) ;)
+"20-error-invalid-character.cl", line 2:13, Lexical error: Invalid character: #
+Compilation halted

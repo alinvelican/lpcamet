@@ -1,38 +1,25 @@
-class : CLASS
-A : ID
-{ : AS
-s1 : ID
-: : DP
-String : ID
-<- : ATRIBUIRE
-"ab\tcd" : STRING
-; : PV
-s2 : ID
-: : DP
-String : ID
-<- : ATRIBUIRE
-"ab\ncd" : STRING
-; : PV
-s3 : ID
-: : DP
-String : ID
-<- : ATRIBUIRE
-"ab\
-cd" : STRING
-; : PV
-s4 : ID
-: : DP
-String : ID
-<- : ATRIBUIRE
-"ab\\cd" : STRING
-; : PV
-s5 : ID
-: : DP
-String : ID
-<- : ATRIBUIRE
-"ab\zcd" : STRING
-; : PV
-} : AD
-; : PV
-<EOF> : EOF
-(program (stat (decclass class A (body { (stat (decvar s1 : String <- "ab\tcd")) ; (stat (decvar s2 : String <- "ab\ncd")) ; (stat (decvar s3 : String <- "ab\\r\ncd")) ; (stat (decvar s4 : String <- "ab\\cd")) ; (stat (decvar s5 : String <- "ab\zcd")) ; }))) ;)
+program
+  class
+    A
+    attribute
+      s1
+      String
+      ab	cd
+    attribute
+      s2
+      String
+      ab
+cd
+    attribute
+      s3
+      String
+      ab
+cd
+    attribute
+      s4
+      String
+      ab\cd
+    attribute
+      s5
+      String
+      abzcd

@@ -1,6 +1,5 @@
-// Generated from C:/Users/alin/IdeaProjects/tema1.2/src/cool/parser\CoolParser.g4 by ANTLR 4.7
+// Generated from C:/Users/alin/IdeaProjects/lpcamet/src/main/java/cool/parser\CoolParser.g4 by ANTLR 4.7
 package cool.parser;
-
 import org.antlr.v4.runtime.tree.ParseTreeListener;
 
 /**
@@ -23,240 +22,442 @@ public interface CoolParserListener extends ParseTreeListener {
     void exitProgram(CoolParser.ProgramContext ctx);
 
     /**
-     * Enter a parse tree produced by {@link CoolParser#stat}.
+     * Enter a parse tree produced by {@link CoolParser#classxx}.
      *
      * @param ctx the parse tree
      */
-    void enterStat(CoolParser.StatContext ctx);
+    void enterClassxx(CoolParser.ClassxxContext ctx);
 
     /**
-     * Exit a parse tree produced by {@link CoolParser#stat}.
+     * Exit a parse tree produced by {@link CoolParser#classxx}.
      *
      * @param ctx the parse tree
      */
-    void exitStat(CoolParser.StatContext ctx);
+    void exitClassxx(CoolParser.ClassxxContext ctx);
 
     /**
-     * Enter a parse tree produced by {@link CoolParser#decclass}.
+     * Enter a parse tree produced by the {@code functie}
+     * labeled alternative in {@link CoolParser#featurexx}.
      *
      * @param ctx the parse tree
      */
-    void enterDecclass(CoolParser.DecclassContext ctx);
+    void enterFunctie(CoolParser.FunctieContext ctx);
 
     /**
-     * Exit a parse tree produced by {@link CoolParser#decclass}.
+     * Exit a parse tree produced by the {@code functie}
+     * labeled alternative in {@link CoolParser#featurexx}.
      *
      * @param ctx the parse tree
      */
-    void exitDecclass(CoolParser.DecclassContext ctx);
+    void exitFunctie(CoolParser.FunctieContext ctx);
 
     /**
-     * Enter a parse tree produced by {@link CoolParser#decvar}.
+     * Enter a parse tree produced by the {@code atribut}
+     * labeled alternative in {@link CoolParser#featurexx}.
      *
      * @param ctx the parse tree
      */
-    void enterDecvar(CoolParser.DecvarContext ctx);
+    void enterAtribut(CoolParser.AtributContext ctx);
 
     /**
-     * Exit a parse tree produced by {@link CoolParser#decvar}.
+     * Exit a parse tree produced by the {@code atribut}
+     * labeled alternative in {@link CoolParser#featurexx}.
      *
      * @param ctx the parse tree
      */
-    void exitDecvar(CoolParser.DecvarContext ctx);
+    void exitAtribut(CoolParser.AtributContext ctx);
 
     /**
-     * Enter a parse tree produced by {@link CoolParser#decfunctie}.
+     * Enter a parse tree produced by {@link CoolParser#formalxx}.
      *
      * @param ctx the parse tree
      */
-    void enterDecfunctie(CoolParser.DecfunctieContext ctx);
+    void enterFormalxx(CoolParser.FormalxxContext ctx);
 
     /**
-     * Exit a parse tree produced by {@link CoolParser#decfunctie}.
+     * Exit a parse tree produced by {@link CoolParser#formalxx}.
      *
      * @param ctx the parse tree
      */
-    void exitDecfunctie(CoolParser.DecfunctieContext ctx);
+    void exitFormalxx(CoolParser.FormalxxContext ctx);
 
     /**
-     * Enter a parse tree produced by {@link CoolParser#asigvar}.
+     * Enter a parse tree produced by the {@code new}
+     * labeled alternative in {@link CoolParser#expresiexx}.
      *
      * @param ctx the parse tree
      */
-    void enterAsigvar(CoolParser.AsigvarContext ctx);
+    void enterNew(CoolParser.NewContext ctx);
 
     /**
-     * Exit a parse tree produced by {@link CoolParser#asigvar}.
+     * Exit a parse tree produced by the {@code new}
+     * labeled alternative in {@link CoolParser#expresiexx}.
      *
      * @param ctx the parse tree
      */
-    void exitAsigvar(CoolParser.AsigvarContext ctx);
+    void exitNew(CoolParser.NewContext ctx);
 
     /**
-     * Enter a parse tree produced by {@link CoolParser#funccall}.
+     * Enter a parse tree produced by the {@code minus}
+     * labeled alternative in {@link CoolParser#expresiexx}.
+     *
+     * @param ctx the parse tree
+     */
+    void enterMinus(CoolParser.MinusContext ctx);
+
+    /**
+     * Exit a parse tree produced by the {@code minus}
+     * labeled alternative in {@link CoolParser#expresiexx}.
+     *
+     * @param ctx the parse tree
+     */
+    void exitMinus(CoolParser.MinusContext ctx);
+
+    /**
+     * Enter a parse tree produced by the {@code string}
+     * labeled alternative in {@link CoolParser#expresiexx}.
+     *
+     * @param ctx the parse tree
+     */
+    void enterString(CoolParser.StringContext ctx);
+
+    /**
+     * Exit a parse tree produced by the {@code string}
+     * labeled alternative in {@link CoolParser#expresiexx}.
+     *
+     * @param ctx the parse tree
+     */
+    void exitString(CoolParser.StringContext ctx);
+
+    /**
+     * Enter a parse tree produced by the {@code bool}
+     * labeled alternative in {@link CoolParser#expresiexx}.
+     *
+     * @param ctx the parse tree
+     */
+    void enterBool(CoolParser.BoolContext ctx);
+
+    /**
+     * Exit a parse tree produced by the {@code bool}
+     * labeled alternative in {@link CoolParser#expresiexx}.
+     *
+     * @param ctx the parse tree
+     */
+    void exitBool(CoolParser.BoolContext ctx);
+
+    /**
+     * Enter a parse tree produced by the {@code funccall}
+     * labeled alternative in {@link CoolParser#expresiexx}.
      *
      * @param ctx the parse tree
      */
     void enterFunccall(CoolParser.FunccallContext ctx);
 
     /**
-     * Exit a parse tree produced by {@link CoolParser#funccall}.
+     * Exit a parse tree produced by the {@code funccall}
+     * labeled alternative in {@link CoolParser#expresiexx}.
      *
      * @param ctx the parse tree
      */
     void exitFunccall(CoolParser.FunccallContext ctx);
 
     /**
-     * Enter a parse tree produced by {@link CoolParser#objectfunccall}.
+     * Enter a parse tree produced by the {@code isvoid}
+     * labeled alternative in {@link CoolParser#expresiexx}.
      *
      * @param ctx the parse tree
      */
-    void enterObjectfunccall(CoolParser.ObjectfunccallContext ctx);
+    void enterIsvoid(CoolParser.IsvoidContext ctx);
 
     /**
-     * Exit a parse tree produced by {@link CoolParser#objectfunccall}.
+     * Exit a parse tree produced by the {@code isvoid}
+     * labeled alternative in {@link CoolParser#expresiexx}.
      *
      * @param ctx the parse tree
      */
-    void exitObjectfunccall(CoolParser.ObjectfunccallContext ctx);
+    void exitIsvoid(CoolParser.IsvoidContext ctx);
 
     /**
-     * Enter a parse tree produced by {@link CoolParser#ifthenelse}.
+     * Enter a parse tree produced by the {@code inm}
+     * labeled alternative in {@link CoolParser#expresiexx}.
      *
      * @param ctx the parse tree
      */
-    void enterIfthenelse(CoolParser.IfthenelseContext ctx);
+    void enterInm(CoolParser.InmContext ctx);
 
     /**
-     * Exit a parse tree produced by {@link CoolParser#ifthenelse}.
+     * Exit a parse tree produced by the {@code inm}
+     * labeled alternative in {@link CoolParser#expresiexx}.
      *
      * @param ctx the parse tree
      */
-    void exitIfthenelse(CoolParser.IfthenelseContext ctx);
+    void exitInm(CoolParser.InmContext ctx);
 
     /**
-     * Enter a parse tree produced by {@link CoolParser#whileloop}.
-     *
-     * @param ctx the parse tree
-     */
-    void enterWhileloop(CoolParser.WhileloopContext ctx);
-
-    /**
-     * Exit a parse tree produced by {@link CoolParser#whileloop}.
-     *
-     * @param ctx the parse tree
-     */
-    void exitWhileloop(CoolParser.WhileloopContext ctx);
-
-    /**
-     * Enter a parse tree produced by {@link CoolParser#letstat}.
-     *
-     * @param ctx the parse tree
-     */
-    void enterLetstat(CoolParser.LetstatContext ctx);
-
-    /**
-     * Exit a parse tree produced by {@link CoolParser#letstat}.
-     *
-     * @param ctx the parse tree
-     */
-    void exitLetstat(CoolParser.LetstatContext ctx);
-
-    /**
-     * Enter a parse tree produced by {@link CoolParser#expresie}.
-     *
-     * @param ctx the parse tree
-     */
-    void enterExpresie(CoolParser.ExpresieContext ctx);
-
-    /**
-     * Exit a parse tree produced by {@link CoolParser#expresie}.
-     *
-     * @param ctx the parse tree
-     */
-    void exitExpresie(CoolParser.ExpresieContext ctx);
-
-    /**
-     * Enter a parse tree produced by {@link CoolParser#header}.
-     *
-     * @param ctx the parse tree
-     */
-    void enterHeader(CoolParser.HeaderContext ctx);
-
-    /**
-     * Exit a parse tree produced by {@link CoolParser#header}.
-     *
-     * @param ctx the parse tree
-     */
-    void exitHeader(CoolParser.HeaderContext ctx);
-
-    /**
-     * Enter a parse tree produced by {@link CoolParser#body}.
+     * Enter a parse tree produced by the {@code body}
+     * labeled alternative in {@link CoolParser#expresiexx}.
      *
      * @param ctx the parse tree
      */
     void enterBody(CoolParser.BodyContext ctx);
 
     /**
-     * Exit a parse tree produced by {@link CoolParser#body}.
+     * Exit a parse tree produced by the {@code body}
+     * labeled alternative in {@link CoolParser#expresiexx}.
      *
      * @param ctx the parse tree
      */
     void exitBody(CoolParser.BodyContext ctx);
 
     /**
-     * Enter a parse tree produced by {@link CoolParser#expresi}.
+     * Enter a parse tree produced by the {@code imp}
+     * labeled alternative in {@link CoolParser#expresiexx}.
      *
      * @param ctx the parse tree
      */
-    void enterExpresi(CoolParser.ExpresiContext ctx);
+    void enterImp(CoolParser.ImpContext ctx);
 
     /**
-     * Exit a parse tree produced by {@link CoolParser#expresi}.
+     * Exit a parse tree produced by the {@code imp}
+     * labeled alternative in {@link CoolParser#expresiexx}.
      *
      * @param ctx the parse tree
      */
-    void exitExpresi(CoolParser.ExpresiContext ctx);
+    void exitImp(CoolParser.ImpContext ctx);
 
     /**
-     * Enter a parse tree produced by {@link CoolParser#decvars}.
+     * Enter a parse tree produced by the {@code plus}
+     * labeled alternative in {@link CoolParser#expresiexx}.
      *
      * @param ctx the parse tree
      */
-    void enterDecvars(CoolParser.DecvarsContext ctx);
+    void enterPlus(CoolParser.PlusContext ctx);
 
     /**
-     * Exit a parse tree produced by {@link CoolParser#decvars}.
+     * Exit a parse tree produced by the {@code plus}
+     * labeled alternative in {@link CoolParser#expresiexx}.
      *
      * @param ctx the parse tree
      */
-    void exitDecvars(CoolParser.DecvarsContext ctx);
+    void exitPlus(CoolParser.PlusContext ctx);
 
     /**
-     * Enter a parse tree produced by {@link CoolParser#newobject}.
+     * Enter a parse tree produced by the {@code whileloop}
+     * labeled alternative in {@link CoolParser#expresiexx}.
      *
      * @param ctx the parse tree
      */
-    void enterNewobject(CoolParser.NewobjectContext ctx);
+    void enterWhileloop(CoolParser.WhileloopContext ctx);
 
     /**
-     * Exit a parse tree produced by {@link CoolParser#newobject}.
+     * Exit a parse tree produced by the {@code whileloop}
+     * labeled alternative in {@link CoolParser#expresiexx}.
      *
      * @param ctx the parse tree
      */
-    void exitNewobject(CoolParser.NewobjectContext ctx);
+    void exitWhileloop(CoolParser.WhileloopContext ctx);
 
     /**
-     * Enter a parse tree produced by {@link CoolParser#dispatch}.
+     * Enter a parse tree produced by the {@code not}
+     * labeled alternative in {@link CoolParser#expresiexx}.
      *
      * @param ctx the parse tree
      */
-    void enterDispatch(CoolParser.DispatchContext ctx);
+    void enterNot(CoolParser.NotContext ctx);
 
     /**
-     * Exit a parse tree produced by {@link CoolParser#dispatch}.
+     * Exit a parse tree produced by the {@code not}
+     * labeled alternative in {@link CoolParser#expresiexx}.
      *
      * @param ctx the parse tree
      */
-    void exitDispatch(CoolParser.DispatchContext ctx);
+    void exitNot(CoolParser.NotContext ctx);
+
+    /**
+     * Enter a parse tree produced by the {@code intt}
+     * labeled alternative in {@link CoolParser#expresiexx}.
+     *
+     * @param ctx the parse tree
+     */
+    void enterIntt(CoolParser.InttContext ctx);
+
+    /**
+     * Exit a parse tree produced by the {@code intt}
+     * labeled alternative in {@link CoolParser#expresiexx}.
+     *
+     * @param ctx the parse tree
+     */
+    void exitIntt(CoolParser.InttContext ctx);
+
+    /**
+     * Enter a parse tree produced by the {@code casee}
+     * labeled alternative in {@link CoolParser#expresiexx}.
+     *
+     * @param ctx the parse tree
+     */
+    void enterCasee(CoolParser.CaseeContext ctx);
+
+    /**
+     * Exit a parse tree produced by the {@code casee}
+     * labeled alternative in {@link CoolParser#expresiexx}.
+     *
+     * @param ctx the parse tree
+     */
+    void exitCasee(CoolParser.CaseeContext ctx);
+
+    /**
+     * Enter a parse tree produced by the {@code til}
+     * labeled alternative in {@link CoolParser#expresiexx}.
+     *
+     * @param ctx the parse tree
+     */
+    void enterTil(CoolParser.TilContext ctx);
+
+    /**
+     * Exit a parse tree produced by the {@code til}
+     * labeled alternative in {@link CoolParser#expresiexx}.
+     *
+     * @param ctx the parse tree
+     */
+    void exitTil(CoolParser.TilContext ctx);
+
+    /**
+     * Enter a parse tree produced by the {@code paran}
+     * labeled alternative in {@link CoolParser#expresiexx}.
+     *
+     * @param ctx the parse tree
+     */
+    void enterParan(CoolParser.ParanContext ctx);
+
+    /**
+     * Exit a parse tree produced by the {@code paran}
+     * labeled alternative in {@link CoolParser#expresiexx}.
+     *
+     * @param ctx the parse tree
+     */
+    void exitParan(CoolParser.ParanContext ctx);
+
+    /**
+     * Enter a parse tree produced by the {@code ineg}
+     * labeled alternative in {@link CoolParser#expresiexx}.
+     *
+     * @param ctx the parse tree
+     */
+    void enterIneg(CoolParser.InegContext ctx);
+
+    /**
+     * Exit a parse tree produced by the {@code ineg}
+     * labeled alternative in {@link CoolParser#expresiexx}.
+     *
+     * @param ctx the parse tree
+     */
+    void exitIneg(CoolParser.InegContext ctx);
+
+    /**
+     * Enter a parse tree produced by the {@code ifthenelse}
+     * labeled alternative in {@link CoolParser#expresiexx}.
+     *
+     * @param ctx the parse tree
+     */
+    void enterIfthenelse(CoolParser.IfthenelseContext ctx);
+
+    /**
+     * Exit a parse tree produced by the {@code ifthenelse}
+     * labeled alternative in {@link CoolParser#expresiexx}.
+     *
+     * @param ctx the parse tree
+     */
+    void exitIfthenelse(CoolParser.IfthenelseContext ctx);
+
+    /**
+     * Enter a parse tree produced by the {@code let}
+     * labeled alternative in {@link CoolParser#expresiexx}.
+     *
+     * @param ctx the parse tree
+     */
+    void enterLet(CoolParser.LetContext ctx);
+
+    /**
+     * Exit a parse tree produced by the {@code let}
+     * labeled alternative in {@link CoolParser#expresiexx}.
+     *
+     * @param ctx the parse tree
+     */
+    void exitLet(CoolParser.LetContext ctx);
+
+    /**
+     * Enter a parse tree produced by the {@code atribuire}
+     * labeled alternative in {@link CoolParser#expresiexx}.
+     *
+     * @param ctx the parse tree
+     */
+    void enterAtribuire(CoolParser.AtribuireContext ctx);
+
+    /**
+     * Exit a parse tree produced by the {@code atribuire}
+     * labeled alternative in {@link CoolParser#expresiexx}.
+     *
+     * @param ctx the parse tree
+     */
+    void exitAtribuire(CoolParser.AtribuireContext ctx);
+
+    /**
+     * Enter a parse tree produced by the {@code id}
+     * labeled alternative in {@link CoolParser#expresiexx}.
+     *
+     * @param ctx the parse tree
+     */
+    void enterId(CoolParser.IdContext ctx);
+
+    /**
+     * Exit a parse tree produced by the {@code id}
+     * labeled alternative in {@link CoolParser#expresiexx}.
+     *
+     * @param ctx the parse tree
+     */
+    void exitId(CoolParser.IdContext ctx);
+
+    /**
+     * Enter a parse tree produced by the {@code objfunccall}
+     * labeled alternative in {@link CoolParser#expresiexx}.
+     *
+     * @param ctx the parse tree
+     */
+    void enterObjfunccall(CoolParser.ObjfunccallContext ctx);
+
+    /**
+     * Exit a parse tree produced by the {@code objfunccall}
+     * labeled alternative in {@link CoolParser#expresiexx}.
+     *
+     * @param ctx the parse tree
+     */
+    void exitObjfunccall(CoolParser.ObjfunccallContext ctx);
+
+    /**
+     * Enter a parse tree produced by {@link CoolParser#letbody}.
+     *
+     * @param ctx the parse tree
+     */
+    void enterLetbody(CoolParser.LetbodyContext ctx);
+
+    /**
+     * Exit a parse tree produced by {@link CoolParser#letbody}.
+     *
+     * @param ctx the parse tree
+     */
+    void exitLetbody(CoolParser.LetbodyContext ctx);
+
+    /**
+     * Enter a parse tree produced by {@link CoolParser#casebody}.
+     *
+     * @param ctx the parse tree
+     */
+    void enterCasebody(CoolParser.CasebodyContext ctx);
+
+    /**
+     * Exit a parse tree produced by {@link CoolParser#casebody}.
+     *
+     * @param ctx the parse tree
+     */
+    void exitCasebody(CoolParser.CasebodyContext ctx);
 }

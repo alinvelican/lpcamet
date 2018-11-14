@@ -1,22 +1,12 @@
-class : CLASS
-A : ID
-{ : AS
-x : ID
-: : DP
-SELF_TYPE : ID
-; : PV
-} : AD
-; : PV
-class : CLASS
-B : ID
-inherits : INHERITS
-A : ID
-{ : AS
-y : ID
-: : DP
-Int : ID
-; : PV
-} : AD
-; : PV
-<EOF> : EOF
-(program (stat (decclass class A (body { (stat (decvar x : SELF_TYPE)) ; }))) ; (stat (decclass class B inherits A (body { (stat (decvar y : Int)) ; }))) ;)
+program
+  class
+    A
+    attribute
+      x
+      SELF_TYPE
+  class
+    B
+    A
+    attribute
+      y
+      Int

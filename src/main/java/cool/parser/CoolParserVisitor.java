@@ -1,6 +1,5 @@
-// Generated from C:/Users/alin/IdeaProjects/tema1.2/src/cool/parser\CoolParser.g4 by ANTLR 4.7
+// Generated from C:/Users/alin/IdeaProjects/lpcamet/src/main/java/cool/parser\CoolParser.g4 by ANTLR 4.7
 package cool.parser;
-
 import org.antlr.v4.runtime.tree.ParseTreeVisitor;
 
 /**
@@ -8,7 +7,7 @@ import org.antlr.v4.runtime.tree.ParseTreeVisitor;
  * by {@link CoolParser}.
  *
  * @param <T> The return type of the visit operation. Use {@link Void} for
- *            operations with no return type.
+ * operations with no return type.
  */
 public interface CoolParserVisitor<T> extends ParseTreeVisitor<T> {
     /**
@@ -20,47 +19,78 @@ public interface CoolParserVisitor<T> extends ParseTreeVisitor<T> {
     T visitProgram(CoolParser.ProgramContext ctx);
 
     /**
-     * Visit a parse tree produced by {@link CoolParser#stat}.
+     * Visit a parse tree produced by {@link CoolParser#classxx}.
      *
      * @param ctx the parse tree
      * @return the visitor result
      */
-    T visitStat(CoolParser.StatContext ctx);
+    T visitClassxx(CoolParser.ClassxxContext ctx);
 
     /**
-     * Visit a parse tree produced by {@link CoolParser#decclass}.
+     * Visit a parse tree produced by the {@code functie}
+     * labeled alternative in {@link CoolParser#featurexx}.
      *
      * @param ctx the parse tree
      * @return the visitor result
      */
-    T visitDecclass(CoolParser.DecclassContext ctx);
+    T visitFunctie(CoolParser.FunctieContext ctx);
 
     /**
-     * Visit a parse tree produced by {@link CoolParser#decvar}.
+     * Visit a parse tree produced by the {@code atribut}
+     * labeled alternative in {@link CoolParser#featurexx}.
      *
      * @param ctx the parse tree
      * @return the visitor result
      */
-    T visitDecvar(CoolParser.DecvarContext ctx);
+    T visitAtribut(CoolParser.AtributContext ctx);
 
     /**
-     * Visit a parse tree produced by {@link CoolParser#decfunctie}.
+     * Visit a parse tree produced by {@link CoolParser#formalxx}.
      *
      * @param ctx the parse tree
      * @return the visitor result
      */
-    T visitDecfunctie(CoolParser.DecfunctieContext ctx);
+    T visitFormalxx(CoolParser.FormalxxContext ctx);
 
     /**
-     * Visit a parse tree produced by {@link CoolParser#asigvar}.
+     * Visit a parse tree produced by the {@code new}
+     * labeled alternative in {@link CoolParser#expresiexx}.
      *
      * @param ctx the parse tree
      * @return the visitor result
      */
-    T visitAsigvar(CoolParser.AsigvarContext ctx);
+    T visitNew(CoolParser.NewContext ctx);
 
     /**
-     * Visit a parse tree produced by {@link CoolParser#funccall}.
+     * Visit a parse tree produced by the {@code minus}
+     * labeled alternative in {@link CoolParser#expresiexx}.
+     *
+     * @param ctx the parse tree
+     * @return the visitor result
+     */
+    T visitMinus(CoolParser.MinusContext ctx);
+
+    /**
+     * Visit a parse tree produced by the {@code string}
+     * labeled alternative in {@link CoolParser#expresiexx}.
+     *
+     * @param ctx the parse tree
+     * @return the visitor result
+     */
+    T visitString(CoolParser.StringContext ctx);
+
+    /**
+     * Visit a parse tree produced by the {@code bool}
+     * labeled alternative in {@link CoolParser#expresiexx}.
+     *
+     * @param ctx the parse tree
+     * @return the visitor result
+     */
+    T visitBool(CoolParser.BoolContext ctx);
+
+    /**
+     * Visit a parse tree produced by the {@code funccall}
+     * labeled alternative in {@link CoolParser#expresiexx}.
      *
      * @param ctx the parse tree
      * @return the visitor result
@@ -68,55 +98,26 @@ public interface CoolParserVisitor<T> extends ParseTreeVisitor<T> {
     T visitFunccall(CoolParser.FunccallContext ctx);
 
     /**
-     * Visit a parse tree produced by {@link CoolParser#objectfunccall}.
+     * Visit a parse tree produced by the {@code isvoid}
+     * labeled alternative in {@link CoolParser#expresiexx}.
      *
      * @param ctx the parse tree
      * @return the visitor result
      */
-    T visitObjectfunccall(CoolParser.ObjectfunccallContext ctx);
+    T visitIsvoid(CoolParser.IsvoidContext ctx);
 
     /**
-     * Visit a parse tree produced by {@link CoolParser#ifthenelse}.
+     * Visit a parse tree produced by the {@code inm}
+     * labeled alternative in {@link CoolParser#expresiexx}.
      *
      * @param ctx the parse tree
      * @return the visitor result
      */
-    T visitIfthenelse(CoolParser.IfthenelseContext ctx);
+    T visitInm(CoolParser.InmContext ctx);
 
     /**
-     * Visit a parse tree produced by {@link CoolParser#whileloop}.
-     *
-     * @param ctx the parse tree
-     * @return the visitor result
-     */
-    T visitWhileloop(CoolParser.WhileloopContext ctx);
-
-    /**
-     * Visit a parse tree produced by {@link CoolParser#letstat}.
-     *
-     * @param ctx the parse tree
-     * @return the visitor result
-     */
-    T visitLetstat(CoolParser.LetstatContext ctx);
-
-    /**
-     * Visit a parse tree produced by {@link CoolParser#expresie}.
-     *
-     * @param ctx the parse tree
-     * @return the visitor result
-     */
-    T visitExpresie(CoolParser.ExpresieContext ctx);
-
-    /**
-     * Visit a parse tree produced by {@link CoolParser#header}.
-     *
-     * @param ctx the parse tree
-     * @return the visitor result
-     */
-    T visitHeader(CoolParser.HeaderContext ctx);
-
-    /**
-     * Visit a parse tree produced by {@link CoolParser#body}.
+     * Visit a parse tree produced by the {@code body}
+     * labeled alternative in {@link CoolParser#expresiexx}.
      *
      * @param ctx the parse tree
      * @return the visitor result
@@ -124,34 +125,144 @@ public interface CoolParserVisitor<T> extends ParseTreeVisitor<T> {
     T visitBody(CoolParser.BodyContext ctx);
 
     /**
-     * Visit a parse tree produced by {@link CoolParser#expresi}.
+     * Visit a parse tree produced by the {@code imp}
+     * labeled alternative in {@link CoolParser#expresiexx}.
      *
      * @param ctx the parse tree
      * @return the visitor result
      */
-    T visitExpresi(CoolParser.ExpresiContext ctx);
+    T visitImp(CoolParser.ImpContext ctx);
 
     /**
-     * Visit a parse tree produced by {@link CoolParser#decvars}.
+     * Visit a parse tree produced by the {@code plus}
+     * labeled alternative in {@link CoolParser#expresiexx}.
      *
      * @param ctx the parse tree
      * @return the visitor result
      */
-    T visitDecvars(CoolParser.DecvarsContext ctx);
+    T visitPlus(CoolParser.PlusContext ctx);
 
     /**
-     * Visit a parse tree produced by {@link CoolParser#newobject}.
+     * Visit a parse tree produced by the {@code whileloop}
+     * labeled alternative in {@link CoolParser#expresiexx}.
      *
      * @param ctx the parse tree
      * @return the visitor result
      */
-    T visitNewobject(CoolParser.NewobjectContext ctx);
+    T visitWhileloop(CoolParser.WhileloopContext ctx);
 
     /**
-     * Visit a parse tree produced by {@link CoolParser#dispatch}.
+     * Visit a parse tree produced by the {@code not}
+     * labeled alternative in {@link CoolParser#expresiexx}.
      *
      * @param ctx the parse tree
      * @return the visitor result
      */
-    T visitDispatch(CoolParser.DispatchContext ctx);
+    T visitNot(CoolParser.NotContext ctx);
+
+    /**
+     * Visit a parse tree produced by the {@code intt}
+     * labeled alternative in {@link CoolParser#expresiexx}.
+     *
+     * @param ctx the parse tree
+     * @return the visitor result
+     */
+    T visitIntt(CoolParser.InttContext ctx);
+
+    /**
+     * Visit a parse tree produced by the {@code casee}
+     * labeled alternative in {@link CoolParser#expresiexx}.
+     *
+     * @param ctx the parse tree
+     * @return the visitor result
+     */
+    T visitCasee(CoolParser.CaseeContext ctx);
+
+    /**
+     * Visit a parse tree produced by the {@code til}
+     * labeled alternative in {@link CoolParser#expresiexx}.
+     *
+     * @param ctx the parse tree
+     * @return the visitor result
+     */
+    T visitTil(CoolParser.TilContext ctx);
+
+    /**
+     * Visit a parse tree produced by the {@code paran}
+     * labeled alternative in {@link CoolParser#expresiexx}.
+     *
+     * @param ctx the parse tree
+     * @return the visitor result
+     */
+    T visitParan(CoolParser.ParanContext ctx);
+
+    /**
+     * Visit a parse tree produced by the {@code ineg}
+     * labeled alternative in {@link CoolParser#expresiexx}.
+     *
+     * @param ctx the parse tree
+     * @return the visitor result
+     */
+    T visitIneg(CoolParser.InegContext ctx);
+
+    /**
+     * Visit a parse tree produced by the {@code ifthenelse}
+     * labeled alternative in {@link CoolParser#expresiexx}.
+     *
+     * @param ctx the parse tree
+     * @return the visitor result
+     */
+    T visitIfthenelse(CoolParser.IfthenelseContext ctx);
+
+    /**
+     * Visit a parse tree produced by the {@code let}
+     * labeled alternative in {@link CoolParser#expresiexx}.
+     *
+     * @param ctx the parse tree
+     * @return the visitor result
+     */
+    T visitLet(CoolParser.LetContext ctx);
+
+    /**
+     * Visit a parse tree produced by the {@code atribuire}
+     * labeled alternative in {@link CoolParser#expresiexx}.
+     *
+     * @param ctx the parse tree
+     * @return the visitor result
+     */
+    T visitAtribuire(CoolParser.AtribuireContext ctx);
+
+    /**
+     * Visit a parse tree produced by the {@code id}
+     * labeled alternative in {@link CoolParser#expresiexx}.
+     *
+     * @param ctx the parse tree
+     * @return the visitor result
+     */
+    T visitId(CoolParser.IdContext ctx);
+
+    /**
+     * Visit a parse tree produced by the {@code objfunccall}
+     * labeled alternative in {@link CoolParser#expresiexx}.
+     *
+     * @param ctx the parse tree
+     * @return the visitor result
+     */
+    T visitObjfunccall(CoolParser.ObjfunccallContext ctx);
+
+    /**
+     * Visit a parse tree produced by {@link CoolParser#letbody}.
+     *
+     * @param ctx the parse tree
+     * @return the visitor result
+     */
+    T visitLetbody(CoolParser.LetbodyContext ctx);
+
+    /**
+     * Visit a parse tree produced by {@link CoolParser#casebody}.
+     *
+     * @param ctx the parse tree
+     * @return the visitor result
+     */
+    T visitCasebody(CoolParser.CasebodyContext ctx);
 }

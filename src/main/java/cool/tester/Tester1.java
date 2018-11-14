@@ -24,7 +24,7 @@ public class Tester1 {
         for (var file : testDir.listFiles(filenameFilter)) {
             var inPath = file.getPath();
             var outPath = inPath.replace(".cl", ".out");
-            var newOut = new PrintStream(outPath);
+            var newOut = new PrintStream(outPath, "UTF-8");
             System.setOut(newOut);
             System.setErr(newOut);
             Compiler.main(new String[]{inPath});

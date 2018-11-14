@@ -1,49 +1,27 @@
-class : CLASS
-A : ID
-{ : AS
-x : ID
-: : DP
-SELF_TYPE : ID
-; : PV
-f : ID
-( : PS
-) : PD
-: : DP
-Object : ID
-{ : AS
-0 : INT
-} : AD
-; : PV
-} : AD
-; : PV
-class : CLASS
-B : ID
-inherits : INHERITS
-A : ID
-{ : AS
-y : ID
-: : DP
-Int : ID
-<- : ATRIBUIRE
-0 : INT
-; : PV
-g : ID
-( : PS
-x : ID
-: : DP
-Int : ID
-, : VIRGULA
-y : ID
-: : DP
-Bool : ID
-) : PD
-: : DP
-Int : ID
-{ : AS
-0 : INT
-} : AD
-; : PV
-} : AD
-; : PV
-<EOF> : EOF
-(program (stat (decclass class A (body { (stat (decvar x : SELF_TYPE)) ; (stat (decfunctie (header f ( ) : Object) (body { (stat (expresie 0)) }))) ; }))) ; (stat (decclass class B inherits A (body { (stat (decvar y : Int <- (expresie 0))) ; (stat (decfunctie (header g ( (decvars (decvar x : Int) , (decvar y : Bool)) ) : Int) (body { (stat (expresie 0)) }))) ; }))) ;)
+program
+  class
+    A
+    attribute
+      x
+      SELF_TYPE
+    method
+      f
+      Object
+      0
+  class
+    B
+    A
+    attribute
+      y
+      Int
+      0
+    method
+      g
+      formal
+        x
+        Int
+      formal
+        y
+        Bool
+      Int
+      0
