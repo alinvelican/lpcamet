@@ -1,3 +1,12 @@
+""
+" "
+"\n"
+"!"
+"Calculăm factorial pentru: "
+"Factorial recursiv: "
+"\n"
+"Factorial iterativ: "
+"\n"
 program
   class
     List

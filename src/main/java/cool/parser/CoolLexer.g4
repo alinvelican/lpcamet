@@ -45,9 +45,9 @@ PS : '(';
 PD : ')';
 VIRGULA: ',';
 ERROR :  '#'  {raiseError("Invalid character: " + "#");};
-STRING : '"' ('\\"' | .)*? '"' {if(getText().length() > 1024) { raiseError("String constant too long"); return;} if (getText().indexOf('\0')>0){ raiseError("String contains null character"); return;}
- if(getText().charAt(getText().length()-1) != '\"') { raiseError("Unterminated string constant");
-return;} } ;
+STRING : '"' ('\\"' | .)*? '"' {if(getText().charAt(getText().length()-1) != '\n') { raiseError("Unterminated string constant");
+                                return;}if(getText().length() > 1024) { raiseError("String constant too long"); return;} if (getText().indexOf('\0')>0){ raiseError("String contains null character"); return;}
+  } ;
 
 PLUS:'+';
 MINUS:'-';

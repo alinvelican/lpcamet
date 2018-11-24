@@ -1,3 +1,9 @@
+"ab\tcd"
+"ab\ncd"
+"ab\
+cd"
+"ab\\cd"
+"ab\zcd"
 program
   class
     A

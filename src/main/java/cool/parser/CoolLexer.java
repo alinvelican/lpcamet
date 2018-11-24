@@ -25,11 +25,6 @@ public class CoolLexer extends Lexer {
 			"PUNCT", "AT", "ATRIBUIRE", "COMMENT", "INEGALITATI", "WS", "BLOCK_COMMENT",
 			"NEWLINE"
 	};
-	/**
-	 * @deprecated Use {@link #VOCABULARY} instead.
-	 */
-	@Deprecated
-	public static final String[] tokenNames;
 	public static final String _serializedATN =
 			"\3\u608b\ua72a\u8133\ub9ed\u417c\u3be7\u7786\u5964\2.\u0142\b\1\4\2\t" +
 					"\2\4\3\t\3\4\4\t\4\4\5\t\5\4\6\t\6\4\7\t\7\4\b\t\b\4\t\t\t\4\n\t\n\4\13" +
@@ -160,13 +155,18 @@ public class CoolLexer extends Lexer {
 	public static String[] channelNames = {
 			"DEFAULT_TOKEN_CHANNEL", "HIDDEN"
 	};
+
+	/**
+	 * @deprecated Use {@link #VOCABULARY} instead.
+	 */
+	@Deprecated
+	public static final String[] tokenNames;
 	public static String[] modeNames = {
 			"DEFAULT_MODE"
 	};
 
 	static {
-		RuntimeMetaData.checkVersion("4.7", RuntimeMetaData.VERSION);
-	}
+		RuntimeMetaData.checkVersion("4.7", RuntimeMetaData.VERSION); }
 
 	static {
 		tokenNames = new String[_SYMBOLIC_NAMES.length];
@@ -179,13 +179,6 @@ public class CoolLexer extends Lexer {
 			if (tokenNames[i] == null) {
 				tokenNames[i] = "<INVALID>";
 			}
-		}
-	}
-
-	static {
-		_decisionToDFA = new DFA[_ATN.getNumberOfDecisions()];
-		for (int i = 0; i < _ATN.getNumberOfDecisions(); i++) {
-			_decisionToDFA[i] = new DFA(_ATN.getDecisionState(i), i);
 		}
 	}
 
@@ -268,6 +261,12 @@ public class CoolLexer extends Lexer {
 	private void STRING_action(RuleContext _localctx, int actionIndex) {
 		switch (actionIndex) {
 			case 1:
+				System.out.println(getText());
+				if (getText().charAt(getText().length() - 1) == '\n') {
+					System.out.println("aaaaaaaaaaaaaaa");
+					raiseError("Unterminated string constant");
+					return;
+				}
 				if (getText().length() > 1024) {
 					raiseError("String constant too long");
 					return;
@@ -276,10 +275,7 @@ public class CoolLexer extends Lexer {
 					raiseError("String contains null character");
 					return;
 				}
-				if (!getText().endsWith("\"")) {
-					raiseError("Unterminated string constant");
-					return;
-				}
+
 				break;
 		}
 	}
@@ -289,6 +285,12 @@ public class CoolLexer extends Lexer {
 			case 2:
 				System.err.println("EOF in comment");
 				break;
+		}
+	}
+	static {
+		_decisionToDFA = new DFA[_ATN.getNumberOfDecisions()];
+		for (int i = 0; i < _ATN.getNumberOfDecisions(); i++) {
+			_decisionToDFA[i] = new DFA(_ATN.getDecisionState(i), i);
 		}
 	}
 }

@@ -17,17 +17,17 @@ public class Visitor extends AbstractParseTreeVisitor<NodeBase> implements CoolP
 
     @Override
     public NodeBase visitProgram(CoolParser.ProgramContext ctx) {
-        return new ProgramNode(ctx.classxx().stream().map(x -> visit(x)).collect(Collectors.toList()));
+        return new ProgramNode(ctx.classxx().stream().map(this::visit).collect(Collectors.toList()));
     }
 
     @Override
     public NodeBase visitClassxx(CoolParser.ClassxxContext ctx) {
-        return new ClassNode(ctx.TYPE(), ctx.featurexx().stream().map(x -> visit(x)).collect(Collectors.toList()));
+        return new ClassNode(ctx.TYPE(), ctx.featurexx().stream().map(this::visit).collect(Collectors.toList()));
     }
 
     @Override
     public NodeBase visitFunctie(CoolParser.FunctieContext ctx) {
-        return new FunctieNode(Arrays.asList(ctx.ID(), ctx.TYPE()), ctx.formalxx().stream().map(x -> visit(x)).collect(Collectors.toList()),
+        return new FunctieNode(Arrays.asList(ctx.ID(), ctx.TYPE()), ctx.formalxx().stream().map(this::visit).collect(Collectors.toList()),
                 visit(ctx.expresiexx()));
     }
 
